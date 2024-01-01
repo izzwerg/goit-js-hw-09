@@ -72,7 +72,7 @@ let galleryList = document.querySelector('.gallery');
 let markup = images
   .map(
     image =>
-      `<li class="gallery-item"><a class="gallery-link" href='${image.original}'><img class="gallery-image" src='${image.preview}' data-source='${image.original}' alt='${image.description}'/></a></li>`
+      `<li class="gallery-item"><a class="gallery-link" href='${image.original}'><img class="gallery-image" src='${image.preview}' alt='${image.description}'/></a></li>`
   )
   .join('');
 galleryList.insertAdjacentHTML('beforeend', markup);
