@@ -1,7 +1,3 @@
-import SimpleLightbox from 'simplelightbox';
-
-import 'simplelightbox/dist/simple-lightbox.min.css';
-
 const images = [
   {
     preview:
@@ -76,3 +72,7 @@ let markup = images
   )
   .join('');
 galleryList.insertAdjacentHTML('beforeend', markup);
+
+import SimpleLightbox from 'simplelightbox';
+
+import 'simplelightbox/dist/simple-lightbox.min.css';
