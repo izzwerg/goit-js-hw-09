@@ -1,0 +1,5 @@
+.feedback-form {
+  width: 408px;
+  display: flex;
+  flex-direction: column;
+}
