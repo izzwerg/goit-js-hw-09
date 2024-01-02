@@ -76,3 +76,8 @@ let markup = images
   )
   .join('');
 galleryList.insertAdjacentHTML('beforeend', markup);
+
+let lightbox = new SimpleLightbox('.gallery a', {
+  captionsData: 'alt',
+  captionDelay: 250,
+});
