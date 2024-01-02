@@ -11,6 +11,9 @@ form.addEventListener('submit', submitFunction);
 
 function submitFunction(e) {
   e.preventDefault();
+  if (!emailField.value || !messageField.value) {
+    return;
+  }
   console.log(localStorage.getItem(localStorageKey));
   localStorage.removeItem(localStorageKey);
   form.reset();
@@ -18,7 +21,7 @@ function submitFunction(e) {
 }
 
 form.addEventListener('input', e => {
-  localStorageData[e.target.name] = e.target.value;
+  localStorageData[e.target.name] = e.target.value.trim();
   localStorage.setItem(localStorageKey, JSON.stringify(localStorageData));
 });
 
