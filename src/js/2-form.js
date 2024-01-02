@@ -12,7 +12,7 @@ form.addEventListener('submit', submitFunction);
 function submitFunction(e) {
   e.preventDefault();
   if (!emailField.value || !messageField.value) {
-    return alert('Please fill in all the fields!');
+    return alert('Будь ласка, заповніть всі поля!');
   }
   console.log(localStorage.getItem(localStorageKey));
   localStorage.removeItem(localStorageKey);
